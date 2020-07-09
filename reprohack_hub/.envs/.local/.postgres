@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=reprohack_hub
+POSTGRES_USER=hQHwYEQIyDilKFEafowPZhfNSxrzRwRW
+POSTGRES_PASSWORD=6Hf5y5JdjhfU1ug5EkvilDiFLZkwkjeUchx4Tqenn96ey1Dv5S52wLL80WaCd8sR
