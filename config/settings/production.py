@@ -187,3 +187,7 @@ sentry_sdk.init(
 
 # Your stuff...
 # ------------------------------------------------------------------------------
+
+# https://docs.djangoproject.com/en/3.0/ref/middleware/#referrer-policy
+# https://adamj.eu/tech/2019/04/10/how-to-score-a+-for-security-headers-on-your-django-website/
+SECURE_REFERRER_POLICY = "same-origin"
