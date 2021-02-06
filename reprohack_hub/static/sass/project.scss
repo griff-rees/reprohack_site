@@ -35,3 +35,16 @@ $red: #b94a48;
   border-color: $dark-pink;
   color: $red;
 }
+
+.container-fluid.main-content{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.nav-item.live_chat_btn.boxed_btn_orange {
+  margin: 1em;
+
+  #sign-up-link {
+    padding: .5em;
+  }
+}

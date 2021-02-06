@@ -7,3 +7,12 @@
   background-color: #f2dede;
   border-color: #eed3d7;
   color: #b94a48; }
+
+.container-fluid.main-content {
+  padding-right: 0;
+  padding-left: 0; }
+
+.nav-item.live_chat_btn.boxed_btn_orange {
+  margin: 1em; }
+  .nav-item.live_chat_btn.boxed_btn_orange #sign-up-link {
+    padding: .5em; }

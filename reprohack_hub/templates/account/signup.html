@@ -5,11 +5,14 @@
 
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
+{% block pagetitle %}
+  <h3>{% trans "Signup" %}</h3>
+{% endblock pagetitle %}
+
 {% block inner %}
-<h1>{% trans "Sign Up" %}</h1>
 
+<h3>Welcome to the ReproHack community</h3>
 <p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
-
 <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
   {% csrf_token %}
   {{ form|crispy }}
@@ -19,4 +22,4 @@
   <button class="btn btn-primary" type="submit">{% trans "Sign Up" %} &raquo;</button>
 </form>
 
-{% endblock %}
+{% endblock inner %}

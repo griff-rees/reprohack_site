@@ -3,10 +3,11 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path, re_path
 from django.views import defaults as default_views
+from django.views.generic.base import TemplateView
 from rest_framework.authtoken.views import obtain_auth_token
 
 urlpatterns = [
-    # path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
+    path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
     # path(
     #     "about/", TemplateView.as_view(template_name="pages/about.html"), name="about"
     # ),
@@ -18,7 +19,7 @@ urlpatterns = [
     # Your stuff: custom urls includes go here
     # path("reprohack/", include("reprohack_hub.reprohack.urls", namespace="reprohack")),
     path("", include("reprohack_hub.reprohack.urls")),
-    re_path(r'^markdownx/', include('markdownx.urls')),
+    re_path(r"^markdownx/", include("markdownx.urls")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 # API URLS
